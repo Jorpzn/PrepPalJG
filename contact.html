@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us!</title>
+    <style>
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #222;
+    color: white;
+}
+
+.navbar .logo h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+}
+header {
+    background-color: #388a3b;
+    padding: 1em 0;
+    text-align:center;
+    width: 100%;
+}
+        .contact-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.75);
+            color: #fff;
+            z-index: 1002;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .contact-overlay.active {
+            display: flex;
+        }
+
+        .contact-content {
+            background: #2e2121;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        .contact-content form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-content form input,
+        .contact-content form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .contact-content form button {
+            padding: 10px;
+            font-size: 1.2em;
+            background: #53d399;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .contact-content form button:hover {
+            background: #43b389;
+        }
+
+        .social-icon a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>PrepPal</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#practice-tests">Practice Tests</a></li>
+            <li><a href="index.html#study-guides">Study Guides</a></li>
+            <li><a href="index.html#progress-tracking">Progress Tracking</a></li>
+            <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
+</header>
+    <section id="Contact">
+        <h2></h2>
+        <div class="contact-overlay active">
+            <div class="contact-content">
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/daoud-mirza-611b71216/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/DaoudASC24" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/daoud_mirzaaa/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

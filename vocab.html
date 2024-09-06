@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocab Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="vocab.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a style="text-decoration:none; color: inherit;" href='index.html'>PrepPal</a></h1>
+
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Practice Tests</a></li>
+                <li><a href="resources.html">Study Guides</a></li>
+                <li><a href="#progress-tracking">Progress Tracking</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="flashcards">
+            <div class="flashcard">
+                <div class="flashcard-content">
+                    <p id="flashcard-term"></p>
+                    <p id="flashcard-definition" class="hidden"></p>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="prev-btn" class="control-btn">Previous</button>
+                <button id="flip-btn" class="control-btn">Flip</button>
+                <button id="next-btn" class="control-btn">Next</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="vocab.js"></script>
+</body>
+</html>
+

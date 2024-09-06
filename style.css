@@ -1,0 +1,549 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    color: black;
+}
+header {
+    background-color: #4CAF50;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
+}
+#hero {
+    background-image: url('testingstudent (3).jpg');
+    background-size: 100%;
+    background-position: center;
+    padding: 4em 2em;
+    text-align: center;
+    height: 500%;
+}
+#ttext1{
+    color: white;
+    font-size: 700%;
+}
+
+#ttext2{
+    color: whitesmoke;
+    background-color: #3e8e41;
+    width: 20%;
+    margin-left: 39%;
+    font-size:150%;
+    border-radius: 5%;
+
+}
+#tdesign1{
+    background-color: #3e8e41;
+    width: 17%;
+    color: #f3f3f3;
+    border: 3px solid #3e8e41;
+    border-radius: 15%;
+}
+#tdesign2{
+    background-color: #3e8e41;
+    width: 19%;
+    color: #f3f3f3;
+    border: 3px solid #3e8e41;
+    border-radius: 15%;
+}
+#tdesign3{
+    background-color: #3e8e41;
+    width: 13%;
+    color: #f3f3f3;
+    border: 3px solid #3e8e41;
+    border-radius: 15%;
+}
+
+
+.progress {
+    background-color: #f3f3f3;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 1em 0;
+}
+
+.progress-bar {
+    background-color: #3e8e41;
+    height: 30px;
+    border-radius: 25px;
+    line-height: 30px;
+    color: black;
+    text-align: center;
+    transition: width 0.4s ease;
+}
+.navbar {
+    width: 100%; /* Make the navbar full-width */
+    background-color: #333; /* Replace this with the color you want */
+    position: fixed; /* Keep the navbar fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays on top of other elements */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.logo h1 {
+    margin: 0;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0;
+    padding-right: 30px;
+}
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #FFD700;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+/* Animations */
+@keyframes slideIn {
+    to {
+        top: 0;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Main Content */
+main {
+    padding: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
+
+section:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+section:nth-child(3) {
+    animation-delay: 1s;
+}
+
+section:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+section:nth-child(5) {
+    animation-delay: 2s;
+}
+
+h2 {
+    margin-bottom: 0.5em;
+    position: relative;
+    left: -20px;
+    animation: slideIn 0.8s forwards;
+}
+
+.test-item, .guide-item, .tracker-item, .community-item {
+    background-color: white;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 1s forwards;
+    border: 5px solid green;
+}
+
+.test-item:nth-child(2), 
+.guide-item:nth-child(2), 
+.tracker-item:nth-child(2), 
+.community-item:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+/* Button Hover Effect */
+.test-item a, .guide-item a, .tracker-item a, .community-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.test-item a:hover, .guide-item a:hover, .tracker-item a:hover, .community-item a:hover {
+    background-color: #3e8e41;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards 2s;
+}
+i {
+    font-size:  50px; /* This makes the icons bigger */
+    color: #555; /* Optional: Set the color of the icons */
+    
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        transition: all 0.3s ease;
+        background-color: #4CAF50;
+    }
+
+    .nav-links li {
+        padding: 1em;
+        width: 100%;
+    }
+
+    .nav-links.nav-active {
+        left: 0;
+        opacity: 1;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger .line2 {
+        opacity: 0;
+    }
+
+    .burger .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    .social-media a {
+        margin: 0 15px; 
+        color: white;
+        font-size: 2.5em; 
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+    i {
+        font-size:  50px; /* This makes the icons bigger */
+        color: #555; /* Optional: Set the color of the icons */
+        
+    }
+    
+    
+    .social-media a:hover {
+        color: #FFD700;
+    }
+    
+}
+#contact-link{
+    font-size: 120%;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i');
+/* font-family: 'IBM Plex Serif', serif; */
+/* font-family: 'IBM Plex Sans', sans-serif; */
+
+body {
+    padding-top: 60px; /* Adjust this value based on the height of your navbar */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+h1,
+button {
+  font-family: 'IBM Plex Serif', serif;
+}
+
+p,
+label,
+input {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#main_title {
+  height: 50px;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.adlib {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.adlib label {
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.adlib input {
+  flex: 1;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px #2989d8;
+  caret-color: #2989d8;
+  text-align: center;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+  padding: 10px 18px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  transition: all 0.5s;
+  border-color: #2989d8;
+  background-color: #2989d8;
+}
+
+button:hover {
+  border-color: #c80a00;
+  background: #c80a00;
+  box-shadow: -4px 5px 4px rgba(0, 0, 0, 0.8);
+}
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i');
+/* font-family: 'IBM Plex Serif', serif; */
+/* font-family: 'IBM Plex Sans', sans-serif; */
+
+body {
+  margin: 0;
+}
+
+h1,
+button {
+  font-family: 'IBM Plex Serif', serif;
+}
+
+p,
+label,
+input {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#main_title {
+  height: 50px;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.adlib {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.adlib label {
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.adlib input {
+  flex: 1;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px #2989d8;
+  caret-color: #2989d8;
+  text-align: center;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50px;
+  padding: 10px 18px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  transition: all 0.5s;
+  border-color: #2989d8;
+  background-color: #2989d8;
+}
+
+button:hover {
+  border-color: #c80a00;
+  background: #c80a00;
+  box-shadow: -4px 5px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Chat Button */
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 60%;
+    padding: 30px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.chat-button i {
+    font-size: 24px;
+}
+
+/* Chat Window */
+.chat-window {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.chat-window.hidden {
+    display: none;
+}
+
+#chat-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#all-messages {
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+#chat-window input {
+    width: calc(100% - 20px);
+    margin: 5px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#send-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: calc(100% - 20px);
+    margin: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}

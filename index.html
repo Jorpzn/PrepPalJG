@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAT Prep Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a style="text-decoration:none; color: inherit;" href='index.html'>PrepPal</a></h1>
+
+            </div>
+            <ul class="nav-links">
+                <li><a href="#practice-tests">Practice Tests</a></li>
+                <li><a href="#study-guides">Study Guides</a></li>
+                <li><a href="#progress-tracking">Progress Tracking</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+  
+    <main>
+           <section id="hero">
+            <h2 id="ttext1">Your Path to SAT Success Starts Here</h2>
+            <p id="ttext2">Practice, Learn, and Achieve Your Target Score</p>
+        </section>
+
+        <section id="practice-tests">
+            <h2 id="tdesign1">Practice Tests & Quizzes</h2>
+            <div class="test-item">
+                <h3>Full-Length Practice Test</h3>
+                <p>Take a timed practice test to simulate the SAT.</p>
+                <a href="https://www.legalbluebook.com/login" target = blank>Start Test</a>
+            </div>
+            <div class="test-item">
+            <h3>Diagnostic test</h3>
+                <p>Assess your skill level by taking this 10 minute quiz. We will tell you the next steps.</p>
+                <a href="https://www.kaptest.com/sat/free/sat-pop-quiz?srsltid=AfmBOorKzGAca_93ty05cFv8UkrWoiGlH1DPmMR2AwS8alvDxjAPj20j" target = blank>Start Quiz</a>
+               
+        </section>
+
+        <section id="study-guides">
+            <h2 id="tdesign2">Study Guides & Resources</h2>
+            <div class="guide-item">
+                <h3>SAT Study Plan</h3>
+                <p>Customize your study plan based on your test date.</p>
+                <a href="studyPlan.html">Create Plan</a>
+            </div>
+            <div class="guide-item">
+                <h3>Resource Library</h3>
+                <p>Access articles, videos, and guides.</p>
+                <a href="resources.html">Explore Resources</a>
+            </div>
+        </section>
+
+        <section id="progress-tracking">
+            <h2 id="tdesign3">Progress Tracking</h2>
+            <div class="tracker-item">
+                <div class="progress">
+                    <div class="progress-bar" style="width: 42%;">42%</div>
+                </div>
+                <h3>Score Tracker</h3>
+                <p>Track your scores over time and see your improvement.</p>
+                <a href="#">View Tracker</a>
+            </div>
+            <div class="tracker-item">
+                <h3>Set Your Goal</h3>
+                <p>Set a target score and receive personalized recommendations.</p>
+                <a href="goal.html">Set Goal</a>
+            </div>
+            <div class="tracker-item">
+                <h3>My SAT Vocab</h3>
+                <p>View your saved vocab words. Create flashcards using 500 of the most common SAT Words.</p>
+                <a href="vocab.html">Review My Vocab</a>
+            </div>
+        </section>
+        <a href="contact.html"> <p id="contact-link">Contact Us</p> </a>
+
+</div>
+<div class="social-icon">
+    <a href="https://www.linkedin.com/in/daoud-mirza-611b71216/" target = "_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/DaoudASC24" target = "blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.instagram.com/daoud_mirzaaa/" target = blank><i class="fa-brands fa-instagram"></i></a>
+</div>
+</main>
+
+    <footer>
+        <p>&copy; 2024 SAT Prep Hub. All Rights Reserved.</p>
+    </footer>
+
+  <!-- Chat Button -->
+  <div id="chat-btn" class="chat-button">
+    <i class="fas fa-comments"></i>
+</div>
+
+<!-- Chat Window -->
+<div id="chat-window" class="chat-window hidden">
+    <div id="chat-header">
+        <h3>Live Chat</h3>
+        <button id="close-chat">X</button>
+    </div>
+    <div id="all-messages"></div>
+    <input type="text" id="username" placeholder="Your Name">
+    <input type="text" id="message" placeholder="Type a message">
+    <button id="send-btn">Send</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
