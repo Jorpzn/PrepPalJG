@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Plan</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .dashboard {
+            background-color: white;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 100px; /* To ensure it appears below the navbar */
+        }
+
+        .dashboard h1 {
+            color: #4CAF50;
+            margin-bottom: 1.5em;
+        }
+
+        .plan-btn {
+            display: block;
+            width: 90%;
+            padding: 1em;
+            margin: 0.5em 0;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+
+        .plan-btn:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><a style="text-decoration:none; color: inherit;" href='index.html'>PrepPal</a></h1>
+
+
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#practice-tests">Practice Tests</a></li>
+                <li><a href="index.html#study-guides">Study Guides</a></li>
+                <li><a href="index.html#progress-tracking">Progress Tracking</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="dashboard">
+        <h1>Select Your Study Plan</h1>
+        <a href="4week.html" class="plan-btn">4 Week</a>
+        <a href="8week.html" class="plan-btn">8 Week</a>
+        <a href="12week.html" class="plan-btn">12 Week</a>
+    </div>
+</body>
+</html>

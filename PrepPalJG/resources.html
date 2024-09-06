@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Plan</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .dashboard1 {
+            background-color: white;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 50px; /* To ensure it appears below the navbar */
+            width: 90% ;
+        }
+
+        .dashboard h1 {
+            color: #4CAF50;
+            margin-bottom: 100px;
+            font-size: 400%;
+        }
+
+        #rsrc-t1{
+            display: flex;
+            width: 10%;
+            font-size: 200%;
+            color: whitesmoke;
+            background-color: #4CAF50;
+            animation: slideIn 0.8s forwards;
+        }
+        #rsrc-t2{
+            display: flex;
+            width: 10%;
+            font-size: 200%;
+            color: whitesmoke;
+            background-color: #4CAF50;
+        
+        }
+        #rsrc-t3{
+            display: flex;
+            width: 14%;
+            font-size: 200%;
+            color: whitesmoke;
+            background-color: #4CAF50;
+           
+        }
+
+        #video1{
+            display: inline;
+            margin-left: 5%;
+        }
+        #video2{
+            display: inline;    
+        }
+        #video3{
+            display: inline;    
+        }
+        .links{
+            margin-left: 45%;
+            color: #4CAF50;
+            display: grid;
+            text-align: center;
+            width: 15%;
+        }
+       .linkg{
+        margin-left: 45%;
+            color: #4CAF50;
+            display: grid;
+            text-align: center;
+            width: 17%;
+            border: 3px solid #4CAF50;
+            border-radius: 5px;
+       }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>SAT Prep Hub</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#vid">Videos</a></li>
+                <li><a href="#article">Articles</a></li>
+                <li><a href="#guide">Guides</a></li>
+            </ul>
+     
+        </nav>
+    </header>
+
+    <div class="dashboard1">
+        <h1>S.A.T Resources</h1>
+    <div id = "vid">
+        <p id="rsrc-t1">Videos</p>
+      <p id ="video1">   <iframe width="460" height="315" src="https://www.youtube.com/embed/YMzNJ00Z4Kg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p>
+      <p id ="video2">   <iframe width="460" height="315" src="https://www.youtube.com/embed/HcG867qFZ5A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p>
+      <p id ="video3">   <iframe width="460" height="315" src="https://www.youtube.com/embed/-pGNBb8M3LQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </p>
+    </div>   
+    <br>
+    <br>
+    <div id = "article">
+        <p id="rsrc-t2">Articles</p>
+      
+       
+      <a class="links" href="https://www.geeksforgeeks.org/sat-exam-preparation-tips/#" target="_blank">SAT Preparation Guide </a>
+      <br>
+      <a class="links" href="https://www.learner.com/blog/sat-changes-digital-2024#:~:text=Starting%20in%202024%2C%20the%20SAT,students%20learn%20and%20are%20assessed." target="_blank">SAT Changes in the 2024 Exam. </a>
+      <br>
+      <a class="links" href="https://blog.prepscholar.com/what-is-a-good-sat-score-2024" target="_blank">SAT Scoring </a>
+      <br>
+      <a class="links" href="https://www.appily.com/guidance/articles/college-admission-tests/the-digital-sat#:~:text=The%20test%20is%20divided%20into,parts%20of%20the%20math%20section." target="_blank">SAT Digital Format</a>
+      <br>
+      <a class="links" href="https://blog.collegevine.com/colleges-requiring-sat-act#:~:text=However%2C%20a%20range%20of%20prominent,to%20submit%20a%20test%20score." target="_blank">List of Colleges that Require SAT/ACT Scoring </a>
+      <br>
+      <a class="links" href="https://www.collegexpress.com/articles-and-advice/test-prep/blog/the-5-most-significant-changes-coming-to-the-sat-in-2024/" target="_blank">More Info About 2024 SAT</a>
+       
+    </div>
+    <br>
+    <br>
+    <div id = "guide">
+        <p id="rsrc-t3">Study Guides</p>
+        <a class="linkg" href="https://www.youtube.com/watch?v=fTGuTEQCsZY&list=PL0o_zxa4K1BWLRgHW2i8diQ359U5FbKnI" target="_blank"> Youtube SAT Math Playlist</a>
+        <a class="linkg" href="https://www.youtube.com/watch?v=oPuJG6AJOlQ&list=PLXmJvdMwHZJ98xsCj2NWsdyCaNac4xX6J" target="_blank"> Youtube SAT Digital Prep Playlist</a>
+        <a class="linkg" href="https://www.youtube.com/watch?v=Q1FOo9irGLg&list=PLXmJvdMwHZJ_S9vTPh3MjYhSPD5kD2Dks" target="_blank"> Youtube SAT English/Writing Playlist</a>
+    </div>
+    
+</body>
+</html>
